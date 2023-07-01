@@ -1,0 +1,20 @@
+{
+  "name": "electron-basic-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^25.2.0",
+    "os": "^0.1.2",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.10"
+  }
+}

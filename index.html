@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <link rel="stylesheet" href="style.css">
+    <title>Typescript Electron App</title>
+</head>
+
+<body>
+    <div id="root">
+        <div id="display">
+            <div class="line" id="first_line">0</div>
+            <div class="line" id="second_line"><div id="eq_sign">=</div><div id="eq_result">0</div></div>
+        </div>
+        <div id="buttons">
+            <div id="numpad">
+                <div class="button" id="b_1" data-val="1" data-operation="number">1</div>
+                <div class="button" id="b_2" data-val="2" data-operation="number">2</div>
+                <div class="button" id="b_3" data-val="3" data-operation="number">3</div>
+                <div class="button" id="b_4" data-val="4" data-operation="number">4</div>
+                <div class="button" id="b_5" data-val="5" data-operation="number">5</div>
+                <div class="button" id="b_6" data-val="6" data-operation="number">6</div>
+                <div class="button" id="b_7" data-val="7" data-operation="number">7</div>
+                <div class="button" id="b_8" data-val="8" data-operation="number">8</div>
+                <div class="button" id="b_9" data-val="9" data-operation="number">9</div>
+                <div class="button" id="b_0" data-val="0" data-operation="number">0</div>
+            </div>
+            <div id="functional">
+                <div class="button" id="b_del" data-val="del" data-operation="func">Del</div>
+                <div class="button" id="b_plus" data-val="+" data-operation="func">+</div>
+                <div class="button" id="b_minus" data-val="-" data-operation="func">-</div>
+                <div class="button" id="b_div" data-val="/" data-operation="func">/</div>
+                <div class="button" id="b_multi" data-val="*" data-operation="func">*</div>
+                <div class="button" id="b_eq" data-val="=" data-operation="func">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/renderer/main.js" defer></script>
+</body>
+
+</html>

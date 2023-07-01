@@ -1,0 +1,87 @@
+
+body {
+    background-color: #123643;
+    font-size: 16pt;
+    resize: none;
+    scroll-behavior: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+    gap: 5px;
+    height: 95vh;
+}
+
+#display {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-weight: bold;
+    font-size: 20pt;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#first_line {
+    justify-self: flex-start;
+}
+
+#second_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    font-weight: bold;
+}
+
+#numpad {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+#functional {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
